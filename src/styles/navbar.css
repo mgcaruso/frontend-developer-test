@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
 .container-box {
     height: 4rem;
-    background: white;
-    color: #222;
+    background-color: black;
+    color: white;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -10,15 +12,16 @@
     width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 1;
+    font-family: 'Quicksand', sans-serif;
 }
-
-
 
 .menu-desktop,
 .menu-mobile {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    
 }
 
 .menu-mobile {
@@ -29,7 +32,7 @@
     margin-inline: 1rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
+    color: white;
 }
 
 .burger-menu {
@@ -49,13 +52,16 @@
     align-items: center;
     padding: .5rem;
 }
+.avatar{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
 
 @media (max-width: 425px) {
     .menu-mobile {
         display: flex;
         flex-grow: 1;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .menu-desktop {
