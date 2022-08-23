@@ -1,0 +1,13 @@
+.btn-link{
+    background-color: darkred;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    color:white;
+    transition: .6s all linear; 
+}
+
+.btn-link:hover{
+    color:darkred;
+    background-color: rgb(218, 218, 218);
+}
