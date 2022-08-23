@@ -9,33 +9,38 @@ import { useState } from 'react'
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'
 import { Link as LinkRouter } from 'react-router-dom'
-import axios from "axios";
-import { useEffect } from 'react';
-import users from '../users.json'
-import toast, { Toaster } from 'react-hot-toast';
+import userActions from '../redux/actions/userActions';
 
+import users from '../users.json'
+import toast from 'react-hot-toast';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
-
-
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const handleSignIn = async (e) => {
         e.preventDefault()
         const loggedUser = {
             email: e.target[0].value,
-            password: e.target[1].value,
-            from: "signIn",
-        }
-        // console.log(loggedUser)
+            password: e.target[1].value
+        };
 
         let responseUser = users.filter( user => user.email === loggedUser.email && user.password === loggedUser.password ) //en este caso, haremos las validaciones desde el frontend debido a la carencia de un backend. Idealmente, las respuestas de validación deberían obtenerse desde los controladores.
+        console.log(responseUser)
         if(responseUser.length > 0){
             toast.success(`Welcome, ${responseUser[0].first_name}!`)
+            dispatch(userActions.userSignIn(responseUser[0]));
+            navigate("/")
         }else{
             toast.error("Revise the provided information.")
         }
 
     }
 
+    const loggedUser = useSelector( store => store)
+    console.log(loggedUser)
+    
 
     const [password, setPassword] = useState("")
     const [showInput, setShowInput] = useState(false);
