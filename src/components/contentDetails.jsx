@@ -28,7 +28,7 @@ export default function ContentDetails() {
                     </div>
                 </div>
             </div>
-            <div className='flex my-3 w-full justify-around'>
+            <div className='btn-navigation flex my-3 w-full justify-around'>
                 <LinkRouter className='btn-link' to={`/${currentLocation}`}>
                     <p>Back to {currentLocation}</p>
                 </LinkRouter>

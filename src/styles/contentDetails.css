@@ -6,9 +6,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
 }
-
+.inner-box{
+    margin-inline: .3rem;
+}
 .btn-link {
     background-color: #4d7c0f;
     padding: .5rem 1rem;
@@ -34,6 +35,8 @@
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+
+
 @media (max-width: 768px) {
     .body-details {
         padding: 1rem 0;
@@ -47,5 +50,21 @@
 @media (max-width: 635px) {
     .video-box {
         height: 15rem !important;
+    }
+    .inner-box{
+        padding: 1rem .5rem ;
+    }
+}
+
+@media (max-width: 360px){
+    .btn-navigation{
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn-navigation .btn-link{
+        margin: .5rem 1rem;
+    }
+    .inner-box{
+        padding: 1rem .5rem ;
     }
 }

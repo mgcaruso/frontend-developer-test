@@ -108,7 +108,7 @@ export default function Login() {
                             <div className='flex flex-wrap justify-center items-center'>
                                 <p className='text-sm mr-2 text-white'>Not registered yet?</p>
                                 <p style={{ color: green }} className="font-bold text-center">Create an account <a href="#"><span className='underline'>here</span></a>!</p>
-                                {/* CALL TO ACTION FOR FUTURE SIGN UP PAGE */}
+                                {/* CALL TO ACTION para futura página de sign up */}
                             </div>
                         </div>
                     </form>

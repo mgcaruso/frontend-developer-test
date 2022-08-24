@@ -37,7 +37,7 @@ export default function Navbar() {
         <>
             <div className='container-box'>
                 <div className='menu-mobile'>
-                    {open ? <BiX onClick={() => setOpen(false)} color="white" size={25} /> : <BiMenu onClick={() => setOpen(true)} color="black" size={25} />}
+                    {open ? <BiX onClick={() => setOpen(false)} color="white" size={25} /> : <BiMenu onClick={() => setOpen(true)} color="white" size={25} />}
                     <div>
                         <img className="avatar h-[2.7rem] w-[2.7rem] rounded-full object-cover" src={loggedUser?.avatar || UnknownUser} alt={loggedUser ? "userAvatar" : "unknown user"} />
                     </div>
