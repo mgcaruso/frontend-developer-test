@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
 
-/* .body{
-    background-color: #f9ffe1;
-
-} */
+*{
+    padding: 0;
+    margin: 0;
+}
 .full-container{
     height: 100%;
     background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 80%);
@@ -55,6 +55,36 @@
 
 .card-text:hover{
     opacity: 1;
+}
+
+
+@media (max-width: 425px) {
+    .streaming-box h3{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .streaming-box h4{
+        font-size: .8rem;
+    }
+    .hi-box{
+        text-align: center;
+    }
+}
+@media (max-width: 359px) {
+    .streaming-box{
+        flex-direction: column;
+        height: 30rem;
+    }
+    .streaming-box h3, .streaming-box h4{
+        margin: 1rem 2rem;
+        text-align: center;
+    }
+    
+}
+@media (max-width: 300px) {
+    .video-banner,.body{
+        margin:0 !important;
+    }
 }
 
 @media (max-width: 537px) {

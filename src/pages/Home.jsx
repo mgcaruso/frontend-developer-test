@@ -44,7 +44,7 @@ export default function Home() {
                     <h3 className='text-white text-2xl mt-3 mx-6'>Your favourite recipes in any device.</h3>
                 </div>
             </div>
-            <div className="streming-box w-full h-[15rem] flex justify-center items-center bg-[#f9ffe1]">
+            <div className="streaming-box w-full h-[15rem] flex justify-center items-center bg-[#f9ffe1]">
                 <img className="h-[12rem] w-[12rem]" src={logo} alt="logo" />
                 <div className='flex flex-col items-start justify-center'>
                     <h3 className='text-2xl'>The streaming service that will level up your cooking skills.</h3>
@@ -54,9 +54,9 @@ export default function Home() {
             {/* <div className='chefs-box'>
 
             </div> */}
-            <div className='w-full min-h-[8rem] flex justify-center items-center bg-black'>
+            <div className='hi-box w-full min-h-[8rem] flex justify-center items-center bg-black'>
                 {loggedUser ?
-                    <h3 className='text-white text-2xl mt-3 mx-3'>Hi, <span className='text-green-600 font-bold'>{loggedUser.first_name}</span>! Explore our categories and find your recipe:</h3>
+                    <h3 className='text-white text-center text-2xl mt-3 mx-3'>Hi, <span className='text-green-600 font-bold'>{loggedUser.first_name}</span>! Explore our categories and find your recipe:</h3>
                     :
                     <div className="flex flex-col justify-center items-center">
                         <h3 className='text-white text-2xl mt-3 mx-3'>Hi, there! Please, <LinkRouter to='/logIn' className='font-bold underline'>log in</LinkRouter> to enjoy our content.</h3>
