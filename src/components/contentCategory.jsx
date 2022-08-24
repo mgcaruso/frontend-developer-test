@@ -13,7 +13,7 @@ export default function ContentCategory() {
 
     let array = [];
     for (let object of data) {
-        console.log(object.category)
+        // console.log(object.category)
         if (typeof object.category === typeof "string") {
             array.push(object.category)
         } else {
@@ -28,11 +28,7 @@ export default function ContentCategory() {
         }
         return unique;
     }, []);
-
-
     let categoryObj = unique.filter(item => item.name === category)
-    console.log(data)
-
     let filtered = data.filter(item => {
         for (let categ of item.category) {
             if (categ.name === category) {
@@ -40,7 +36,7 @@ export default function ContentCategory() {
             }
         }
     })
-    console.log(filtered)
+    // console.log(filtered)
     return (
         <div className='category-box'>
             <div className="category-banner" style={{ backgroundImage: `url(${categoryObj[0].picture})` }} >
@@ -62,7 +58,7 @@ export default function ContentCategory() {
             </div> */}
             <div className='videos-box w-full flex flex-col bg-[#f9ffe1]'>
                 <h3 className='my-3 text-xl text-center'>Explore videos in the {category} category:</h3>
-                <div className='videos w-full flex gap-1 flex-wrap justify-center items-center'>
+                <div className='videos my-5 w-full flex gap-1 flex-wrap justify-center items-center'>
                     <Carousel style={{
                         height: "12rem",
                         width: "100%"
@@ -70,8 +66,9 @@ export default function ContentCategory() {
                         {filtered.map((item, i) => {
                             return (
                                 <Carousel.Item
+                                    key={i}
                                     style={{
-                                        height: "15rem"
+                                        height: "12rem"
                                     }}>
                                     <LinkRouter to={item.videoId}>
                                         <div className='container h-[12rem] '>

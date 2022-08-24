@@ -6,8 +6,9 @@ import { useState } from 'react';
 import { Link as LinkRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import toast, { Toast } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import UnknownUser from '../assets/unknown_user.jpg'
+import userActions from '../redux/actions/userActions';
 
 
 export default function Navbar() {
@@ -22,17 +23,11 @@ export default function Navbar() {
     ]
 
     const handleSignOut = () => {
-
-        dispatch({
-            type: 'USER',
-            payload: null
-        })
-        localStorage.removeItem('user')
+        dispatch(userActions.userSignOut());
         navigate("/");
         toast.success("You have signed out!")
     }
-
-    console.log(loggedUser?.avatar)
+    console.log(loggedUser, 'navbar')
     return (
         <>
             <div className='container-box'>
@@ -43,13 +38,19 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className='menu-desktop'>
-                    {links.map((link, i) =>
-                        <LinkRouter className="link" key={i} to={link.to}>
-                            <button onClick={loggedUser && link.name !== "Home" && handleSignOut}>
-                                {link.name}
-                            </button>
-                        </LinkRouter>
-                    )}
+                    {
+                        links.map((link, i) => {
+                            return (
+                                link.name === "Sign Out" ?
+                                    <button className='mx-4' key={i} onClick={loggedUser && link.name !== "Home" && handleSignOut}>
+                                        {link.name}
+                                    </button>
+                                    :
+                                    <LinkRouter className="mx-4" key={i} to={link.to}>{link.name}</LinkRouter>
+                            )
+                        })
+                    }
+
                     <div>
                         <img className="avatar h-[2.3rem] w-[2.3rem] rounded-full object-cover" src={loggedUser?.avatar || UnknownUser} alt="Unknown_user" />
                     </div>

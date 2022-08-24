@@ -11,7 +11,6 @@ export default function Home() {
     const dispatch = useDispatch();
     let array = [];
     for (let object of data) {
-        console.log(object.category)
         if (typeof object.category === typeof "string") {
             array.push(object.category)
         } else {

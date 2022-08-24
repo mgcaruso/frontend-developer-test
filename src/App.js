@@ -7,10 +7,22 @@ import Footer from './components/footer'
 import ContentCategory from './components/ContentCategory'
 import ContentDetails from './components/ContentDetails'
 import { Toaster } from 'react-hot-toast';
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import userActions from './redux/actions/userActions';
 
 function App() {
-  const loggedUser = useSelector( store => store.usersReducer.loggedUser)
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    let loggedUser = JSON.parse(localStorage.getItem('user'));
+    dispatch(userActions.userSignIn(loggedUser))
+  }, [])
+  
+    const loggedUser = useSelector( store=> store.usersReducer.loggedUser)
+
+
   return (
     <>
       <Navbar />
@@ -18,9 +30,9 @@ function App() {
         <Route exact path='/' element={<Home />} />
         {loggedUser && <Route exact path='/:category' element={<ContentCategory />} />}
         {loggedUser && <Route exact path='/:category/:videoId' element={<ContentDetails />} />}
-        {!loggedUser ? <Route exact path='/login' element={<LogIn />} /> : <Route exact path='/login' element={<Home />} />  }
+        {!loggedUser ? <Route exact path='/login' element={<LogIn />} /> : <Route exact path='/login' element={<Home />} />}
       </Routes>
-      <Footer/>
+      <Footer />
       <Toaster />
     </>
   );

@@ -17,7 +17,7 @@ export default function ContentDetails() {
                 <div className='inner-box p-8 flex items-center justify-center'>
 
                     <div className='w-45 h-[18rem]'>
-                        <video className='h-[18rem] object-cover' src={filteredObj[0].videoUrl} controls={true} autoplay />
+                        <video className='h-[18rem] object-cover' src={filteredObj[0].videoUrl} controls={true} />
 
                     </div>
                     <div className='w-45 min-h-[19.8rem] px-4 rounded-md flex flex-col justify-around items-center m-3 dropshadow-lg bg-white'>
