@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
 .category-box{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .category-banner{
@@ -11,4 +14,75 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    filter: saturate(0.7);
+}
+
+.featuring-box{
+    display: flex;
+    
+}
+
+.image-carousel{
+    border-radius: 5px;
+}
+
+.img-box{
+    background-color: rgba(0,0,0,0.9);
+
+}
+
+/* CAROUSEL */
+
+.centered {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity .7s ease-in-out;
+}
+
+.container:hover,.centered:hover{
+    opacity: 1;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.image-carousel{
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .image-carousel {
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+
+    .image-carousel,
+    .sc-dnqmqq,
+    .bVoXXg {
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 572px) {
+    .centered{
+        font-size: 1.5rem;
+    }
+
 }

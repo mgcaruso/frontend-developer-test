@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
+.body-details{
+   background-color: white;
+   font-family: 'Quicksand', sans-serif;
+   background-image: url("https://cdn.pixabay.com/photo/2017/11/06/17/05/vegetable-2924245_960_720.jpg");
+}
+
 .btn-link{
-    background-color: darkred;
+    background-color: #4d7c0f;
     padding: .5rem 1rem;
     border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
@@ -8,6 +16,17 @@
 }
 
 .btn-link:hover{
-    color:darkred;
-    background-color: rgb(218, 218, 218);
+    color: white;
+    background-color: black;
+}
+
+.video-box{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.inner-box{
+    border-radius: 6px;
+    background-color: white;
+    display: flex;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
