@@ -48,7 +48,7 @@ export default function Home() {
                     <h4 className='text-lg'>Enjoy exclusive recipes from the most awarded chefs in the world.</h4>
                 </div>
             </div>
-            <div className='hi-box w-full min-h-[8rem] flex justify-center items-center bg-black'>
+            <div className='hi-box w-full min-h-[8rem] flex justify-center items-center bg-[#181818]'>
                 {loggedUser ?
                     <h3 className='text-white text-center text-2xl mt-3 mx-3'>Hi, <span className='text-green-600 font-bold'>{loggedUser.first_name}</span>! Explore our categories and find your recipe:</h3>
                     :

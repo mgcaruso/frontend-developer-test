@@ -91,5 +91,8 @@
     .video-banner,.body{
         margin:0 !important;
     }
+    .title{
+        font-size: 3rem;
+    }
 }
 

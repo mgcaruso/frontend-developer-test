@@ -51,7 +51,7 @@ export default function Navbar() {
                         </LinkRouter>
                     )}
                     <div>
-                        <img className="avatar h-[2.7rem] w-[2.7rem] rounded-full object-cover" src={loggedUser?.avatar || UnknownUser} alt="Unknown_user" />
+                        <img className="avatar h-[2.3rem] w-[2.3rem] rounded-full object-cover" src={loggedUser?.avatar || UnknownUser} alt="Unknown_user" />
                     </div>
                 </div>
             </div>
