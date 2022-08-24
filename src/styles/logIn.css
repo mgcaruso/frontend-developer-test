@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
+
 :root {
-    --main-blue: #162e35;
+    --main-green: #4d7c0f;
+    --secondary-green: #f9ffe1;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600;700&family=Orbitron:wght@900&display=swap');
+
+.container-max {
+    background-image: url("../assets/login.jpg");
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+
+}
 
 .body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .heading {
-    font-weight: bold;
-    text-shadow: 3px 2px 3px rgba(85, 85, 85, 0.4);
-    color: #025171;
+    color: var(--secondary-green);
     margin-bottom: 0 !important;
 }
 
@@ -25,8 +32,8 @@
 }
 
 .sign-in-card {
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 90% !important;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100% !important;
 }
 
 .btn-width-full {
@@ -35,7 +42,7 @@
 
 .btn-width-full:hover {
     background-color: transparent;
-    border: 1.5px solid var(--main-blue);
+    border: 1.5px solid var(--main-green);
     font-weight: bold;
     box-shadow: rgba(100, 100, 111, 0.7) 0px 7px 29px 0px;
     transition: all .5s linear;
@@ -45,7 +52,7 @@
     padding: 0 0 !important;
 }
 
-input{
+input {
     padding: .3rem .3rem;
 }
 
@@ -103,8 +110,8 @@ span::after,
 
 /*--- btn-5 ---*/
 .btn-5 span {
-    color: var(--main-blue);
-    border: 2px solid rgb(166, 218, 248);
+    color: var(--main-green);
+    border: 2px solid --secondary-green;
     transition: 0.2s;
 }
 
@@ -117,7 +124,7 @@ span::after,
 .btn.hover-border-11::after {
     width: 100%;
     height: 2px;
-    background-color: var(--main-blue);
+    background-color: var(--main-green);
     z-index: 1;
     transition: 0.35s;
 }
@@ -142,7 +149,7 @@ span::after,
 .btn.hover-border-11 span::after {
     width: 2px;
     height: 100%;
-    background-color: var(--main-blue);
+    background-color: var(--main-green);
     z-index: 0;
     transition: 0.25s;
 }
@@ -189,7 +196,7 @@ span::after,
 
 .line {
     height: 2px;
-    width: 45%;
+    width: 45% !important; 
     background-color: #d6d6d6;
 }
 
@@ -214,17 +221,17 @@ input::placeholder {
 
 
 .btn2 {
-    background-color: var(--main-blue);
+    background-color: var(--main-green);
     transition: all .5 ease;
 }
 
 .btn2:hover {
-    background-color: rgb(166, 218, 248);
+    background-color: white;
 
 }
 
 .btn span:hover {
-    color: var(--main-blue) !important;
+    color: var(--main-green) !important;
     font-weight: bold;
 }
 
@@ -235,15 +242,11 @@ input::placeholder {
 
 
 
-.sign-in-card {
-    width: 40%;
-    background-color: rgba(255, 255, 255, 0.75);
-
-}
 
 
 
-.input-box:focus-within{
+
+.input-box:focus-within {
     background-color: rgba(0, 0, 0, 0.22);
     background-color: rgba(166, 218, 248, 0.5);
     border-bottom: 2px solid #2d505a;
@@ -255,7 +258,7 @@ input::placeholder {
 
 @media (max-width: 1024px) {
 
-    
+
     .sign-in-card {
         width: 70% !important;
     }
@@ -275,7 +278,8 @@ input::placeholder {
     .first-last-box {
         flex-direction: column;
     }
-    .box-modal{
+
+    .box-modal {
         width: 95% !important;
     }
 

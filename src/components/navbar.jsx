@@ -37,7 +37,7 @@ export default function Navbar() {
         <>
             <div className='container-box'>
                 <div className='menu-mobile'>
-                    {open ? <BiX onClick={() => setOpen(false)} color="black" size={25} /> : <BiMenu onClick={() => setOpen(true)} color="black" size={25} />}
+                    {open ? <BiX onClick={() => setOpen(false)} color="white" size={25} /> : <BiMenu onClick={() => setOpen(true)} color="black" size={25} />}
                     <div>
                         <img className="avatar h-[2.7rem] w-[2.7rem] rounded-full object-cover" src={loggedUser?.avatar || UnknownUser} alt={loggedUser ? "userAvatar" : "unknown user"} />
                     </div>
@@ -57,7 +57,7 @@ export default function Navbar() {
             </div>
             {open &&
                 <div className='burger-menu'>
-                    {links.map((link, i) => <LinkRouter className="link burger-link" key={i} to={link.to}>{link.name}</LinkRouter>)}
+                    {links.map((link, i) => <LinkRouter className="link burger-link my-3" key={i} to={link.to}>{link.name}</LinkRouter>)}
                 </div>
             }
         </>

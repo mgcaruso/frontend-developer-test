@@ -13,16 +13,15 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+.title,.subtitle{
+    margin-left: 3rem;
+}
 
-.home-banner{
-    /* background-image: url('../assets/banner.jpg'); */
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; */
+
+
+.body{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 .video-banner{
@@ -58,6 +57,7 @@
 }
 
 
+
 @media (max-width: 425px) {
     .streaming-box h3{
         font-size: 1rem;
@@ -68,6 +68,12 @@
     }
     .hi-box{
         text-align: center;
+    }
+    .title,.subtitle{
+        margin-left: 1rem;
+    }
+    .subtitle{
+        width: 50%;
     }
 }
 @media (max-width: 359px) {
@@ -87,13 +93,3 @@
     }
 }
 
-@media (max-width: 537px) {
-    .categories-box{
-        flex-direction: column;
-        padding: .5rem 1rem;
-    }
-
-    .category-card{
-        margin: .5rem 0;
-    }
-}
