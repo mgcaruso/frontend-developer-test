@@ -22,8 +22,7 @@ export default function Login() {
             password: e.target[1].value
         };
 
-        let responseUser = users.filter(user => user.email === loggedUser.email && user.password === loggedUser.password) //en este caso, haremos las validaciones desde el frontend debido a la carencia de un backend. Idealmente, las respuestas de validación deberían obtenerse desde los controladores.
-        console.log(responseUser)
+        let responseUser = users.filter(user => user.email === loggedUser.email && user.password === loggedUser.password) //en este caso, haremos las validaciones desde el frontend debido a la carencia de un backend. Idealmente, las respuestas de validación deberían obtenerse desde los controladores del back (además de realizarse las desencriptaciones de las contraseñas correspondientes para validar que correspondan al mail).
         if (responseUser.length > 0) {
             toast.success(`Welcome, ${responseUser[0].first_name}!`)
             dispatch(userActions.userSignIn(responseUser[0]));
@@ -33,11 +32,6 @@ export default function Login() {
         }
 
     }
-
-    const loggedUser = useSelector(store => store)
-    console.log(loggedUser)
-
-
     const [password, setPassword] = useState("")
     const [showInput, setShowInput] = useState(false);
     const showPassword = () => {

@@ -16,11 +16,13 @@ function App() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    let loggedUser = JSON.parse(localStorage.getItem('user'));
-    dispatch(userActions.userSignIn(loggedUser))
+    let userStorage = JSON.parse(localStorage.getItem('user'));
+    if (userStorage) {
+      dispatch(userActions.userSignIn(userStorage))
+    }
   }, [])
-  
-    const loggedUser = useSelector( store=> store.usersReducer.loggedUser)
+
+  const loggedUser = useSelector(store => store.usersReducer.loggedUser)
 
 
   return (

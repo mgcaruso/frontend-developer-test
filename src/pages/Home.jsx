@@ -8,7 +8,6 @@ import banner from '../assets/banner.mp4'
 import logo from '../assets/logo-app.png'
 
 export default function Home() {
-    const dispatch = useDispatch();
     let array = [];
     for (let object of data) {
         if (typeof object.category === typeof "string") {
@@ -25,7 +24,6 @@ export default function Home() {
         }
         return unique;
     }, []);
-    dispatch(categoriesActions.setCategories(unique))
     const loggedUser = useSelector(store => store.usersReducer.loggedUser)
     return (
         <div className='body min-h-[80vh]'>

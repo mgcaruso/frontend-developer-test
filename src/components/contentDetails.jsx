@@ -13,11 +13,11 @@ export default function ContentDetails() {
     return (
         <div className='body-details grow flex flex-col justify-center items-center'>
 
-            <div className="h-full flex w-full justify-center items-center ">
+            <div className="h-full flex w-full justify-center items-center my-5">
                 <div className='inner-box p-8 flex items-center justify-center'>
 
-                    <div className='w-45 h-[18rem]'>
-                        <video className='h-[18rem] object-cover' src={filteredObj[0].videoUrl} controls={true} />
+                    <div className='w-45'>
+                        <video className='video h-[18rem] object-cover' src={filteredObj[0].videoUrl} controls={true} autoPlay />
 
                     </div>
                     <div className='w-45 min-h-[19.8rem] px-4 rounded-md flex flex-col justify-around items-center m-3 dropshadow-lg bg-white'>

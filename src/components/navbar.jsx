@@ -16,7 +16,6 @@ export default function Navbar() {
     const navigate = useNavigate()
     const [open, setOpen] = useState(false)
     const loggedUser = useSelector(store => store.usersReducer.loggedUser)
-
     const links = [
         { name: "Home", to: "/" },
         { name: !loggedUser ? "Log In" : "Sign Out", to: !loggedUser ? "/login" : "/" }
@@ -25,9 +24,9 @@ export default function Navbar() {
     const handleSignOut = () => {
         dispatch(userActions.userSignOut());
         navigate("/");
-        toast.success("You have signed out!")
+        toast.success("You have signed out!");
     }
-    console.log(loggedUser, 'navbar')
+
     return (
         <>
             <div className='container-box'>

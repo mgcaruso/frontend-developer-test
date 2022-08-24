@@ -54,6 +54,10 @@
     .inner-box{
         padding: 1rem .5rem ;
     }
+    .video{
+        height: 15rem;
+        width: 100%;
+    }
 }
 
 @media (max-width: 360px){
@@ -66,5 +70,9 @@
     }
     .inner-box{
         padding: 1rem .5rem ;
+    }
+    .video{
+        height: 10rem;
+        width: 100%;
     }
 }

@@ -5,13 +5,11 @@
     --secondary-green: #f9ffe1;
 }
 
-
 .container-max {
     background-image: url("../assets/login.jpg");
     background-position: center;
     background-size: cover;
     flex-grow: 1;
-
 }
 
 .body {
@@ -60,7 +58,6 @@ input {
     margin: 0 0 !important;
 }
 
-
 /* BUTTON */
 
 :active,
@@ -69,7 +66,6 @@ input {
     outline: 0 !important;
     outline-offset: 0;
 }
-
 
 .btn::before,
 span::before,
@@ -105,8 +101,6 @@ span::after,
     padding: 15px 20px;
     transition: 0.3s;
 }
-
-
 
 /*--- btn-5 ---*/
 .btn-5 span {
@@ -196,7 +190,7 @@ span::after,
 
 .line {
     height: 2px;
-    width: 45% !important; 
+    width: 45% !important;
     background-color: #d6d6d6;
 }
 
@@ -218,8 +212,6 @@ input::placeholder {
 
 }
 
-
-
 .btn2 {
     background-color: var(--main-green);
     transition: all .5 ease;
@@ -240,12 +232,6 @@ input::placeholder {
     font-weight: lighter;
 }
 
-
-
-
-
-
-
 .input-box:focus-within {
     background-color: rgba(0, 0, 0, 0.22);
     background-color: rgba(166, 218, 248, 0.5);
@@ -258,9 +244,8 @@ input::placeholder {
 
 @media (max-width: 1024px) {
 
-
     .sign-in-card {
-        width: 70% !important;
+        width: 90% !important;
     }
 
 }
