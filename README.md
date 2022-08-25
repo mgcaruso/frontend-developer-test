@@ -28,22 +28,17 @@
     <li>
       <a href="#about-the-project">Acerca de Simple & Quick</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Desarrollado con:</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Para empezar:</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation">Instalación</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#usage">Uso</a></li>
+    <li><a href="#contact">Contacto</a></li>
   </ol>
 </details>
 
@@ -52,7 +47,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About Simple & Quick
 
-[![Simple & Quick][product-screenshot]]
+![Simple & Quick][product-screenshot]
 
 Simple & Quick es un aplicativo web multimedia orientado a la industria culinaria. Permite acceder a videos de recetas práctica y simples (de menos de 4 minutos de duración) a los usuarios que contratan este servicio. Estas recetas han sido elaboradas exclusivamente por chefs internacionales. 
 
@@ -103,7 +98,7 @@ Debe clonar el repositorio o descargar el archivo .zip desde Github. Siga las in
 Para ver el contenido de la página, es necesario que haya un usuario logueado. 
 Para encontrar la información de logueo, ingrese en el archivo `content.json`, y allí encontrará 50 usuarios con datos que podrá utilizar en la página de log in.
 
-[![code-example][code-screenshot]]
+![code-example][code-screenshot]
 
 
 <p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
