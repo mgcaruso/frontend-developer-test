@@ -14,7 +14,7 @@
     <a href="https://github.com/mgcaruso/frontend-developer-test"><strong>Explora los archivos »</strong></a>
     <br />
     <br />
-    <!-- <a href="https://github.com/github_username/repo_name">View Demo</a> -->
+    <a href="https://simple-and-quick.vercel.app">Ver Demo</a>
     
   </p>
 </div>
@@ -46,7 +46,7 @@
 
 <!-- ABOUT THE PROJECT -->
 <a id="about-the-project"></a>
-## About Simple & Quick
+## Acerca de Simple & Quick
 
 ![Simple & Quick][product-screenshot]
 
@@ -123,7 +123,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_guadalupe_caruso
-[product-screenshot]: https://i.imgur.com/WyTRsMy.png
+[product-screenshot]: https://i.imgur.com/2gQ1yNw.png
 [code-screenshot]: https://i.imgur.com/yzgeyDv.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
