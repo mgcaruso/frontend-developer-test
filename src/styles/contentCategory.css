@@ -39,12 +39,16 @@
     flex-grow: 1;
 }
 
+
+
+
+
 /* CAROUSEL */
 
 .centered {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,13 +59,11 @@
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     font-weight: bold;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .7s ease-in-out;
 }
 
-.container:hover,.centered:hover{
-    opacity: 1;
-}
+
 .container {
     position: relative;
     text-align: center;
@@ -87,8 +89,15 @@
 
 
 @media (max-width: 572px) {
+    .container{
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .centered{
         font-size: 1.5rem;
-    }
+        width: 100%;
 
+    }
 }

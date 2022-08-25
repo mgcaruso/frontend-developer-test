@@ -57,11 +57,13 @@ export default function ContentCategory() {
                             return (
                                 <Carousel.Item
                                     key={i}
+                                    className="carousel-box rounded-full"
                                     style={{
-                                        height: "12rem"
+                                        height: "12rem",
+                                        width:"100%"
                                     }}>
                                     <LinkRouter to={item.videoId}>
-                                        <div className='container h-[12rem] '>
+                                        <div className='container'>
                                             <img className="image-carousel" height="100%" width="100%" src={item.thumbnail} alt={item.videoTitle} />
                                             <div className="centered flex flex-col">
                                                 <h4 className='text-2xl my-1'>{item.videoTitle}</h4>
