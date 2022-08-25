@@ -55,12 +55,12 @@ export default function Home() {
                 }
             </div>
             {loggedUser &&
-                <div className='categories-box bg-black flex w-full pb-4'>
+                <div className='categories-box bg-[#181818] flex w-full pb-4 flex-wrap justify-around items-center'>
                     {
                         unique.map((item, i) => {
                             return (
                                 <LinkRouter key={i} to={item.name} className="category-card" style={{ backgroundImage: `url(${item.picture})` }}>
-                                    <h4 className='card-text text-white text-center text-2xl h-full w-full flex justify-center items-center bg-black bg-opacity-60'>{item.name}</h4>
+                                    <h4 className='card-text text-white text-center text-2xl h-[12rem] w-full flex justify-center items-center bg-black bg-opacity-60'>{item.name}</h4>
                                 </LinkRouter>
                             )
                         })

@@ -57,7 +57,7 @@ export default function Login() {
 
                     <form onSubmit={handleSignIn} className="form" action="#" method="POST">
                         <div className="rounded-md ">
-                            <div className="input-box w-full bg-[rgba(0,0,0,0)] border-b-2 border-[#f9ffe1] placeholder-slate-900 focus:outline-none focus:border-[#4d7c0f] flex justify-between items-center">
+                            <div className="input-box w-full bg-[rgba(0,0,0,0)] border-b-2 border-[#f9ffe1] placeholder-slate-100 focus:outline-none focus:border-[#4d7c0f] flex justify-between items-center text-slate-100">
                                 <label htmlFor="email-address" className="sr-only">
                                     Email address
                                 </label>
@@ -72,7 +72,7 @@ export default function Login() {
                                 />
                                 <EmailIcon sx={{ color: green, width: ".8em" }} />
                             </div>
-                            <div className="input-box w-full bg-[rgba(0,0,0,0)] border-b-2 border-[#f9ffe1] placeholder-slate-900 focus:outline-none  focus:border-[#4d7c0f] flex justify-between mb-4 items-center">
+                            <div className="input-box w-full bg-[rgba(0,0,0,0)] border-b-2 border-[#f9ffe1] placeholder-slate-100 focus:outline-none  focus:border-[#4d7c0f] flex justify-between mb-4 items-center text-slate-100">
                                 <label htmlFor="email-address" className="sr-only">
                                     Password
                                 </label>

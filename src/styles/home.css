@@ -36,7 +36,7 @@
     background-position: center;
     background-size: cover;
     display: flex;
-    width: 100%;
+    width: 14rem;
     margin: 1rem .5rem;
     justify-content: center;
     align-items: center;
@@ -74,6 +74,9 @@
     }
     .subtitle{
         width: 50%;
+    }
+    .categories-box{
+        flex-wrap: wrap;
     }
 }
 @media (max-width: 359px) {
