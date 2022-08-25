@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+<a id="readme-top"></a>
 
 <br />
 <div align="center">
@@ -45,6 +45,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
+<a id="about-the-project"></a>
 ## About Simple & Quick
 
 ![Simple & Quick][product-screenshot]
@@ -55,6 +56,7 @@ Simple & Quick es un aplicativo web multimedia orientado a la industria culinari
 
 
 
+<a id="built-with"></a>
 ### Desarrollado con:
 
 * [![React][React.js]][React-url]
@@ -68,10 +70,12 @@ Simple & Quick es un aplicativo web multimedia orientado a la industria culinari
 
 
 <!-- GETTING STARTED -->
+<a id="getting-started"></a>
 ## Para empezar
 
 Debe clonar el repositorio o descargar el archivo .zip desde Github. Siga las instrucciones de instalación.
 
+<a id="installation"></a>
 ### Instalación
 
 1. Ingrese a [https://github.com/mgcaruso/frontend-developer-test](https://github.com/mgcaruso/frontend-developer-test).
@@ -93,6 +97,7 @@ Debe clonar el repositorio o descargar el archivo .zip desde Github. Siga las in
 
 
 <!-- USAGE EXAMPLES -->
+<a id="usage"></a>
 ## Uso
 
 Para ver el contenido de la página, es necesario que haya un usuario logueado. 
@@ -105,13 +110,14 @@ Para encontrar la información de logueo, ingrese en el archivo `content.json`, 
 
 
 <!-- CONTACT -->
+<a id="contact"></a>
 ## Contacto
 
 María Guadalupe Caruso - [@linkedIn](https://www.linkedin.com/in/guadalupe-caruso) - mguadalupecaruso@gmail.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/mgcaruso/frontend-developer-test)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
 
 
 
