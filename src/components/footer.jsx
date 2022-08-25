@@ -26,7 +26,6 @@ export default function Footer() {
                         <li><a href="#">Privacy</a></li>
                         <li><a href='mailto:simpleandquick@gmail.com'>Contact</a></li>
                     </ul>
-
                 </div>
             </div>
             <div className='divider-box'>

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
 
-.category-box{
+.category-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
 }
 
-.category-banner{
+.category-banner {
     height: 20rem;
     width: 100%;
     display: flex;
@@ -19,29 +19,25 @@
     filter: saturate(0.7);
 }
 
-.featuring-box{
+.featuring-box {
     display: flex;
-    
+
 }
 
-.image-carousel{
+.image-carousel {
     border-radius: 5px;
     height: 12rem;
     object-fit: cover;
 }
 
-.img-box{
-    background-color: rgba(0,0,0,0.9);
+.img-box {
+    background-color: rgba(0, 0, 0, 0.9);
 
 }
 
-.videos-box{
+.videos-box {
     flex-grow: 1;
 }
-
-
-
-
 
 /* CAROUSEL */
 
@@ -63,14 +59,13 @@
     transition: opacity .7s ease-in-out;
 }
 
-
 .container {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.image-carousel{
+.image-carousel {
     object-fit: cover;
 }
 
@@ -87,16 +82,15 @@
     }
 }
 
-
 @media (max-width: 572px) {
-    .container{
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .centered{
+
+    .centered {
         font-size: 1.5rem;
         width: 100%;
-
     }
 }

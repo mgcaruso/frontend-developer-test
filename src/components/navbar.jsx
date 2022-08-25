@@ -20,7 +20,6 @@ export default function Navbar() {
         { name: "Home", to: "/" },
         { name: !loggedUser ? "Log In" : "Sign Out", to: !loggedUser ? "/login" : "/" }
     ]
-
     const handleSignOut = () => {
         dispatch(userActions.userSignOut());
         navigate("/");
@@ -49,7 +48,6 @@ export default function Navbar() {
                             )
                         })
                     }
-
                     <div>
                         <img className="avatar h-[2.3rem] w-[2.3rem] rounded-full object-cover" src={loggedUser?.avatar || UnknownUser} alt="Unknown_user" />
                     </div>
@@ -61,6 +59,5 @@ export default function Navbar() {
                 </div>
             }
         </>
-
     )
 }
