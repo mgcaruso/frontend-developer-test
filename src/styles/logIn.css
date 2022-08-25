@@ -234,8 +234,8 @@ input::placeholder {
 
 .input-box:focus-within {
     background-color: rgba(0, 0, 0, 0.22);
-    background-color: rgba(166, 218, 248, 0.5);
-    border-bottom: 2px solid #2d505a;
+    background-color: var(--secondary-green);
+    border-bottom: 2px solid var(--main-green);
 }
 
 
