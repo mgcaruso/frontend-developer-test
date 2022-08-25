@@ -1,8 +1,8 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
 import '../styles/contentCategory.css'
 import data from '../content.json'
 import Carousel from 'react-grid-carousel'
+import { useParams } from 'react-router-dom'
 import { Link as LinkRouter } from 'react-router-dom'
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { BsArrowLeft } from "react-icons/bs";
