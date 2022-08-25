@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import userActions from './redux/actions/userActions';
 
 function App() {
-
+  //En este proyecto, el logueo de usuario está realizado provisoriamente a nivel frontend, guardando los datos del usuario sin encriptar en el localstorage. En mi repositorio https://github.com/mgcaruso/mytinerary-public , podrá encontrar un proyecto con registro y logueo REAL (incluido registro y logueo con Google), realizando todas las validaciones necesarias a nivel back y consumo de la base de datos desde el front. 
   const dispatch = useDispatch()
 
   useEffect(() => {

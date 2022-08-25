@@ -10,8 +10,8 @@ import { BsArrowLeft } from "react-icons/bs";
 export default function ContentCategory() {
 
     let { category } = useParams();
-
     let array = [];
+    //en este caso (línea 15 a 37), utilizamos los métodos planteados a continuación debido a que la información esta contenida en un archivo JSON. En una situación real, se haría una consulta a una base de datos, a un controlador que realizara el filtro y devolviera, por ejemplo un array con los objetos filtrados por categoría, en lugar de hacer este proceso en el frontend (y en cada componente en el que necesitáramos filtrar).  
     for (let object of data) {
         if (typeof object.category === typeof "string") {
             array.push(object.category)
