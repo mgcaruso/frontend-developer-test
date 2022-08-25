@@ -63,7 +63,7 @@ Simple & Quick es un aplicativo web multimedia orientado a la industria culinari
 * [![Tailwind][Tailwind.com]][Tailwind-url]
 * [![Google Cloud][Google-Cloud.com]][Google-Cloud-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">Ir arriba</a>)</p>
 
 
 
@@ -74,7 +74,7 @@ Debe clonar el repositorio o descargar el archivo .zip desde Github. Siga las in
 
 ### Instalación
 
-1. Ingrese a [https://github.com/mgcaruso/frontend-developer-test](Simple & Quick Repository).
+1. Ingrese a [https://github.com/mgcaruso/frontend-developer-test](https://github.com/mgcaruso/frontend-developer-test).
 2. Clone el repositorio:
    ```sh
    git clone https://github.com/mgcaruso/frontend-developer-test

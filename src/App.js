@@ -4,8 +4,8 @@ import { Routes, Route } from 'react-router-dom'
 import LogIn from './pages/LogIn';
 import Home from './pages/Home';
 import Footer from './components/footer'
-import ContentCategory from './components/ContentCategory'
-import ContentDetails from './components/ContentDetails'
+import ContentCategory from './components/contentCategory'
+import ContentDetails from './components/contentDetails'
 import { Toaster } from 'react-hot-toast';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
