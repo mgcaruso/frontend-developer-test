@@ -35,8 +35,6 @@
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-
-
 @media (max-width: 768px) {
     .body-details {
         padding: 1rem 0;

@@ -23,6 +23,10 @@
             { 
                 "name": "Salty",
                 "picture": "https://i.imgur.com/ZmWbN7A.jpg"
+            },
+            {
+                "name": "Italian",
+                "picture": "https://i.imgur.com/odZZkRi.jpg"
             }
         ],
         "videoTitle": "Delicious Spicy Rice With Sausage",
@@ -38,6 +42,10 @@
             {
                 "name": "Sweet",
                 "picture": "https://i.imgur.com/JZEi7M7.jpg"
+            },
+            { 
+                "name": "Vegetarian",
+                "picture": "https://i.imgur.com/bMrG1XB.jpg"
             }
         ],
         "videoTitle": "Granola Recipe",
@@ -68,6 +76,10 @@
             {
                 "name": "Italian",
                 "picture": "https://i.imgur.com/odZZkRi.jpg"
+            },
+            {
+                "name": "Salty",
+                "picture": "https://i.imgur.com/ZmWbN7A.jpg"
             }
         ],
         "videoTitle": "Spaghetti and Cherry Tomatoes",
@@ -98,6 +110,10 @@
             { 
                 "name": "Sweet",
                 "picture": "https://i.imgur.com/JZEi7M7.jpg"
+            },
+            { 
+                "name": "Vegetarian",
+                "picture": "https://i.imgur.com/bMrG1XB.jpg"
             }
         ],
         "videoTitle": "Microwave mug muffin",
@@ -158,6 +174,10 @@
             { 
                 "name": "Asian",
                 "picture": "https://i.imgur.com/uAexOr1.jpg"
+            },
+            {
+                "name": "Salty",
+                "picture": "https://i.imgur.com/ZmWbN7A.jpg"
             }
         ],
         "videoTitle": "Spicy Shrimp",
@@ -188,6 +208,10 @@
             { 
                 "name": "Asian",
                 "picture": "https://i.imgur.com/uAexOr1.jpg"
+            },
+            {
+                "name": "Salty",
+                "picture": "https://i.imgur.com/ZmWbN7A.jpg"
             }
         ],
         "videoTitle": "A Weeknight Ramen Hack",
@@ -222,6 +246,10 @@
             { 
                 "name": "Asian",
                 "picture": "https://i.imgur.com/uAexOr1.jpg"
+            },
+            {
+                "name": "Salty",
+                "picture": "https://i.imgur.com/ZmWbN7A.jpg"
             }
         ],
         "videoTitle": "Breakfast ramen",

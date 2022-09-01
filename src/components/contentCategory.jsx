@@ -52,7 +52,41 @@ export default function ContentCategory() {
                     <Carousel style={{
                         height: "12rem",
                         width: "100%"
-                    }} cols={3} rows={1} gap={40} loop autoplay={3000}>
+                    }} cols={3} rows={1} gap={40} loop autoplay={3000}
+                    mobileBreakpoint={200}
+                    responsiveLayout={[
+                        {
+                            breakpoint: 576,
+                            cols: 1,
+                            rows: 2,
+                            gap: 5
+                        },
+                        {
+                            breakpoint: 768,
+                            cols: 2,
+                            rows: 2,
+                            gap: 5
+                        },
+                        {
+                            breakpoint: 992,
+                            cols: 2,
+                            rows: 2,
+                            gap: 5
+                        },
+                        {
+                            breakpoint: 1200,
+                            cols: 2,
+                            rows: 2,
+                            gap: 10
+                        },
+                        {
+                            breakpoint: 1400,
+                            cols: 2,
+                            rows: 2,
+                            gap: 15,
+                        }
+                    ]}
+                    >
                         {filtered.map((item, i) => {
                             return (
                                 <Carousel.Item
@@ -60,7 +94,8 @@ export default function ContentCategory() {
                                     className="carousel-box rounded-full"
                                     style={{
                                         height: "12rem",
-                                        width:"100%"
+                                        width:"50%",
+                                        margin:0
                                     }}>
                                     <LinkRouter to={item.videoId}>
                                         <div className='container'>

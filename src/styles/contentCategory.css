@@ -69,17 +69,18 @@
     object-fit: cover;
 }
 
+
 @media (max-width: 992px) {
     .image-carousel {
         object-fit: cover !important;
         object-position: center !important;
     }
 
-    .image-carousel,
+    /* .image-carousel,
     .sc-dnqmqq,
     .bVoXXg {
         height: 150px;
-    }
+    } */
 }
 
 @media (max-width: 572px) {
